@@ -7,10 +7,128 @@
         <!-- All rights reserved to the given source, utilized for education purposes -->
         <link rel="icon"
               type="image/svg"
-              
-              href="https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Photos_icon_%282020%29.svg">  
+              href="https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Photos_icon_%282020%29.svg">
+    </head>  
             <body>
+               
+                <main>
+                <header>Intro to HTML - Journal Entries</header>
+                <div>Personal [Working]-BoJu</div>
+                
 
+                <ul>We currently have <span><strong>3</strong></span> Journal Entries:
+                    <ul>
+                        <nav>
+                            <li><a href="#Journal1">Journal-Entry-#1</a></li>
+                            <li><a href="#Journal2">Journal-Entry-#2</a></li>
+                            <li><a href="#Journal3">Journal-Entry-#3</a></li>
+                        </nav>
+                    </ul>
+                </ul>
+                </main>
+                <section>
+                <h1> <div id=Journal1></div> Journal Entry #1</h1>
+                    <h2>April 9th, 2021</h2>
+                        <h3><i>Asking for my girlfriend's hand</i></h3>
+                    <p>
+                        I invited my inlaws and my parents to a fancy dinner at a nice place in my 
+                        <br>home town. I know that the COVID-19 is still going on but since my parents</br>
+                        inlaws are vaccinated, I felt that I could reserve a private table, have a nice
+                        dinner </br> and ask for my girlfriend's hand and for their blessing. Everything went
+                        really nice, </br> a lot of emotions, anxiety, nervousness, happiness, crying, but all 
+                        in all we were given </br> their blessing. Today was a really nice day...
+                    </p> 
+                </section>
+
+
+                <hr>
+
+                <section>
+                    <h1> <div id=Journal2></div> Journal Entry #2</h1>
+                    <h2>April 10th, 2021</h2>
+                        <h3><i>It has been a hard day...</i></h3>
+                    <p>
+                        Today, <em>my work hours got reduced</em> due to the overlap that there is with
+                        <br>my classes, and the ones I have to give to my students. It is due to such </br>
+                        collision that I feel as if I left some of my students down ... at the 
+                        same </br> time I have to focus on school and hopefully one of my peers can bring </br>
+                        their aid and attention to such students. It really has been a hard day...
+                    </p> 
+                </section>
+
+                <hr>
+
+                <section>
+                    <h1> <div id=Journal3></div> Journal Entry #3</h1>
+                    <h2>April 11th, 2021</h2>
+                        <h3><i>Sunday Fam Day</i></h3>
+                    <p>
+                        Sundays are <em>holy</em> to my mother. She has to forcefully gather all of my siblings
+                        <br>and I, along with our girlfriends and have lunch or dinner depending on the time</br>
+                        of day. We talked and actually have a nice time. However, it can sometimes feel </br>
+                        as something we <span> <b>HAVE</b> </span> to do instead of enjoying having dinner with the family. </br> However,
+                        I do love them and do love spending time with them. At the end of the day,</br> we always 
+                        have a great time. 
+                    </p> 
+                </section>
+
+                <hr>
+
+                <form>
+                    <fieldset>
+                        <legend>New Journal Entry:</legend>
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title"><br><br>
+                        <label for="entry">Entry:</label><br>
+                        <textarea id="entry" name="entry" rows="6" cols="70">
+                        </textarea><br><br>
+                        <label for="Tdate">Today's date:</label>
+                        <input type="date" id="Tdate" name="Tdate"><br><br>
+
+                        <label for="audioreq">What format would you like your audio narration file:</label>
+                        <input list="audiorequests" name="audioreq" id="audioreq">
+                        <datalist id="audiorequests">
+                            <option value=".wav">
+                            <option value=".mp4">
+                            <option value=".aac">
+                            <option value=".flac"> 
+                        </datalist> <br> <br>
+
+                        <input type="submit" value="Submit">
+
+                        
+                    </fieldset>
+
+                </form>
+
+                <hr>
+
+                <p>**Pending narration of journal entries**:</p>
+                <audio controls>
+                </audio>
+
+                <hr>
+
+                    
+                </main>
             </body>
-    </head>
+
+            <footer>
+                <p>Author: Issac Garcia</p> 
+                <img src="ProfilePic.jpg" alt="ProfilePic" width="65" height="100">
+
+                <details>
+                    <summary><b>Contact/Inquiries:</b></summary>
+                    <ol><p>isaacgcrosthwaite@gmail.com</p></ol>
+                    <ol><p>619-ISS-ACGC</p></ol>
+                </details>
+                <p>To know a little more about my experience, visit:</p>
+                <li><a href="https://www.linkedin.com/in/isaacgcroz/">My LinkedIn</a> </br></li>
+                <li><a href="https://sites.google.com/view/issacgarcia/home">My EDS124BR Site</a></li>
+                <p>Also check my <b>first</b> attempt to teach Python or anything for that matter: 😀</p>
+                <video width="420" height="340" controls>
+                    <source src="Demo_class.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </footer>
 </html>
