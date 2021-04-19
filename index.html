@@ -6,29 +6,42 @@
             * {
                 background-color: linen;
             }
+
+            /* Element Selector */
             h1 {
                 font-size: 2em;
                 text-decoration: underline;
                 text-align: left;
             }
+
             h2 {
                 font-size: 3ex;
             }
+
             header {
                 font-size: 5vw;
                 padding-bottom: 0.5rem;
             }
+
             p {
                 font-size: 5mm;
             }
+
             form {
                 font-size: 14px;
             }
+
+            h2:hover, b:hover {
+                background-color: yellow;
+            }
+
+            /* Class */
             .div1{
                 width: fit-content;
                 height: fit-content;
                 border: 1px solid black;
             }
+
             .box {
                     margin-top: auto;
                     margin-bottom: auto;
@@ -62,6 +75,10 @@
                 top: 0;
             }
 
+            a[target] {
+                background-color: blueviolet;
+            }
+
             a:link{
                 color: blue;
             }
@@ -73,17 +90,75 @@
                 color: green;
             }
 
+            /* FLEX */
             .container {
                display: flex;
-               flex-wrap: wrap;
-               background-color: aqua;
+               flex-direction: column;
+               order: 5;
+               width: fit-content;
+               height: fit-content;
             }
 
+            /* GRID */
+            .grid {
+                display: grid;
+                grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+                grid-template-rows: 30px 30px;
+                grid-auto-flow: row;
+            }
+            
+            /* QUERY - SCREEN WIDTH */
+            @media screen and (max-width: 500px) {
+                /* Universal Selector */
+                * {
+                    background-color: red;
+                }
+            }
+
+            /* FONT */
             @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
             h1{
                 font-family: 'Antonio', sans-serif;
             }
 
+            /* #id */
+            #center{
+                text-align: center;
+            }
+
+            /* Pseudo-class Selector */ 
+            p:hover {
+                text-transform: uppercase;
+            }
+
+            /* Descendant Selector */
+            ul p {
+                font-size: 30px;
+            }
+
+            /* Child Combinator */
+            span {
+                background-color: green;
+            }
+
+            div > span {
+                background-color: red;
+            }
+
+            /* General sibling combinator */
+            img ~ p {
+                color : blue;
+            }
+
+            /* Adjacent sibling combinator */
+            span + p {
+                font-weight: bold;
+            }
+
+            /* Combining Two Selectors */
+            div.grid {
+                background-color: seagreen;
+            }
 
         </style>
 
@@ -99,14 +174,14 @@
                
                 <main>
                 <header class="sticky">Intro to HTML - Journal Entries</header>
-                <div>Personal [Working]-BoJu</div>
+                <div id="center">Personal [Working]-BoJu</div>
                 
                 <br>
 
                 We currently have <strong>3</strong> Journal Entries:
                 <nav>    
                     <ul>
-                            <li><a href="#Journal1">Journal-Entry-#1</a></li>
+                            <li><a href="#Journal1" target="_blank">Journal-Entry-#1</a></li>
                             <li><a href="#Journal2">Journal-Entry-#2</a></li>
                             <li><a href="#Journal3">Journal-Entry-#3</a></li>
                     </ul>
@@ -195,13 +270,7 @@
                 <p class="box"><b>PENDING NARRATION FOR JOURNAL ENTRIES</b></p>
                 <audio controls>
                 </audio>
-                
-            
-                
-                
 
-                <hr>
-            
             To know a little more about my experience, visit:
                 <ul>
                     <li><a href="https://www.linkedin.com/in/isaacgcroz/">My LinkedIn</a> </li>
@@ -218,7 +287,7 @@
             <footer>
                 <p>Author: Issac Garcia</p> 
                 <img class="static" src="ProfilePic.jpg" alt="ProfilePic" width="65" height="100">
-
+                <p> This should be in blue </p>
                 <details>
                     <summary><b>Contact/Inquiries:</b></summary>
                     <ul>
@@ -228,17 +297,63 @@
                 </details>
             </footer>
 
-
+            <hr>
+            <h1> TESTING SITE: </h1>
 
             <div class="container">
-                <div>1</div>
-                <div>1</div>
-                <div>1</div>
-                <div>1</div>
-                <div>1</div>
+                <div style="background-color:coral;">DO</div>
+                <div style="background-color:lightblue;">NOT</div>
+                <div style="background-color:khaki;">HESITATE TO</div>
+                <div style="background-color:pink;">REACH</div>
+                <div style="background-color:lightgreen;">OUT!</div>
             </div>
 
+
+            <hr>
+
+            <h2 style="text-decoration: underline;">Upcoming calendar:</h2>
+
+            <section class="grid">
+                <div class="item-a">Monday</div>
+                <div class="item-b">Tuesday</div>
+                <div class="item-c">Wednesday</div>
+                <div class="item-d">Thursday</div>
+                <div class="item-e">Friday</div>
+                <div class="item-f">Saturday</div>
+                <div class="item-g">Sunday</div>
+            </section>
+            
+            <br>
+
+            <span style="background-color: yellow;">  Easter egg, may your screen smaller for a surprise!</span>
             </body>
 
+            <hr>
+
+                <ul>
+                    <p>
+                        This text should be 30px!
+                    </p>
+                </ul>
+                
+                <p> This text should NOT be 30px!</p>
+
+
+            <hr>
+
+                <div>
+                    <span>This text should be highlighted in red <br> 
+                        <span> This text should be highlighted in green</span>
+                    </span>
+                </div>
+
+            <hr>
             
+            <span>Whatever comes next should be bold...</span>
+            <p> This should be bold! </p>
+
+            <hr>
+
+            <div class="grid">This grid has a cool background</div>
+
 </html>
