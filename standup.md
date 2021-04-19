@@ -1,4 +1,6 @@
-# Round Robin - Goes around circle, take turns, tokens (one person talking at a time)
+# Round Robin
+
+Goes around circle, take turns, tokens (one person talking at a time)
 
 **What did I work on yesterday?**
 
