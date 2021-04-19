@@ -1,28 +1,13 @@
-Meeting definition: 
+# Round Robin - Goes around circle, take turns, tokens (one person talking at a time)
 
-15 minutes daily meetings
+**What did I work on yesterday?**
 
-Quick, informative, "fun" check-ins to plan for the next 24 hours. 
+**What am I working on today?**
 
-Dev Team
-Scrum Master
-Product Owner
-
-Have everyone stand the whole time. 
+**What is blocking me? (Do not be afraid to jump in here...)**
 
 
-Structure
-
-Method #1: Round Robin - Goes around circle, take turns, tokens (one person talking at a time)
-
-What did I work on yesterday?
-
-What am I working on today?
-
-What is blocking me? (Do not be afraid to jump in here...)
-
-
-Notes:
+**Notes:**
 
 
 
